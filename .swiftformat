@@ -1,0 +1,5 @@
+--commas inline
+--decimalgrouping 3,5
+
+--exclude **/*.generated.swift
+--header "\n Copyright © ipso santé.\n\n This software is distributed under the Creative Commons (CC BY-SA 3.0) license.\n See the LICENSE.md file in this project for more information.\n"
