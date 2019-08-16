@@ -1,16 +1,14 @@
 //
-//  Tests.swift
-//  Tests
+//  Copyright © ipso santé.
 //
-//  Created by Guillaume Algis on 14/08/2019.
-//  Copyright © 2019 ipso santé. All rights reserved.
+//  This software is distributed under the Creative Commons (CC BY-SA 3.0) license.
+//  See the LICENSE.md file in this project for more information.
 //
 
 @testable import Levenshtein
 import XCTest
 
 class Tests: XCTestCase {
-
     func testReadme() {
         let dog = "Black Russian Terrier"
         let cat = "Russian Blue"
@@ -60,11 +58,10 @@ class Tests: XCTestCase {
     }
 
     func testReadmePerformance() {
-        self.measure {
+        measure {
             let dog = "Black Russian Terrier"
             let cat = "Russian Blue"
             _ = Levenshtein.distance(between: dog, and: cat)
         }
     }
-
 }
