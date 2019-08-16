@@ -42,6 +42,7 @@ public enum Levenshtein {
         }
     }
 
+    /// Calculate the Levenshtein distance between two strings.
     public static func distance(between lhsStr: String, and rhsStr: String) -> Int {
         let lhsUnicode = lhsStr.unicodeScalars
         let rhsUnicode = rhsStr.unicodeScalars

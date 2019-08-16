@@ -106,6 +106,7 @@
 				F0BB993023047AE2009B43C4 /* Sources */,
 				F0BB993123047AE2009B43C4 /* Frameworks */,
 				F0BB993223047AE2009B43C4 /* CopyFiles */,
+				F0BB99522306DC48009B43C4 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -179,6 +180,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0BB99522306DC48009B43C4 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif command -v swiftlint > /dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, run 'brew install swiftlint'\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0BB993023047AE2009B43C4 /* Sources */ = {

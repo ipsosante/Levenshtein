@@ -8,7 +8,7 @@
 @testable import Levenshtein
 import XCTest
 
-class Tests: XCTestCase {
+public class Tests: XCTestCase {
     func testReadme() {
         let dog = "Black Russian Terrier"
         let cat = "Russian Blue"
